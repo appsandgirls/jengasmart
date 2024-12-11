@@ -4,18 +4,18 @@ import DocumentUploader from "../DocumentUploader/DocumentUploader"
 import ContractorRating from "../ContractorRating/ContractorRating"
 import ProgressDashboard from "../ProgressDashboard/ProgressDashboard"
 import "./MainDashboard.css" // Importing the CSS file
+import Navbar from "../Navbar/Navbar"
 
 const MainDashboard = () => {
   return (
     <div className="dashboard-container">
-      <h1 className="dashboard-title">Smart Jenga Project Dashboard</h1>
-
+     {/*  <h1 className="dashboard-title">Smart Jenga Project Dashboard</h1> */}
+      <Navbar />
+      {/* Project Management */}
+      <div className="card project-management">
+        <ProjectManagement />
+      </div>
       <div className="grid-container">
-        {/* Project Management */}
-        <div className="card project-management">
-          <ProjectManagement />
-        </div>
-
         {/* Chat Box */}
         <div className="card chat-box">
           <ChatBox />
